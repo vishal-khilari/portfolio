@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{
+    background-color: yellow;
+    height: 80px;
+    width: 100%;
+}
+#nname{
+    float: left;
+    background-color: rgb(163, 127, 255);
+    max-height: 80px;
+    width: 220px;
+}
+
+#nbtns{
+    background-color: blue;
+    height: 80px;
+    width: 800px;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.nbuttons{
+    color: rgb(0, 0, 0);
+    background-color: orange;
+    padding: 20px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+/* #nfeatures{
+    background-color: chartreuse;
+    float: right;
+} */
