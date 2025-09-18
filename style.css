@@ -3,13 +3,65 @@
     margin: 0px;
     border: 0xp;
 }
+.container {
+  width: 90%;   /* instead of 1200px */
+  max-width: 1200px; /* so it doesn’t stretch too wide on big screens */
+}
+/* For mobile phones */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nbuttons {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skill-card {
+  flex: 1 1 200px; /* grows but shrinks on small screens */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #div1{
     height: auto;
     background-color: blueviolet;
 }
 #navbar{
     background-color: rgb(253, 253, 7);
-    height: auto;
     width: 100%;
     display: flex;
 }
@@ -39,7 +91,7 @@
 }
 
 .nbuttons{
-    margin: 15px;
+    margin: 25px;
 }
 
 #LINKS{
@@ -84,7 +136,7 @@
 }
 #name{
     color: rgb(5, 116, 175);
-    font-size: 80px;
+    font-size: 400%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
