@@ -11,7 +11,7 @@
 
 #navbar {
     background-color: rgb(253, 253, 7);
-    width: 100%;
+    /* width: 100%; */
     display: flex;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .nbuttons {
-    margin: 1rem;
+    margin:5%;
 }
 
 #LINKS {
@@ -164,7 +164,7 @@
 
 .plimg{
     height: 3rem;
-    margin: 3.5rem 0.5rem 0rem 0.5rem;
+    margin: 2.5rem 0.5rem 0rem 0.5rem;
 
 }
 
