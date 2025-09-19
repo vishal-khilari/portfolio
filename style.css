@@ -1,19 +1,21 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     border: 0xp;
 }
-#div1{
+
+#div1 {
     height: auto;
     background-color: blueviolet;
 }
-#navbar{
+
+#navbar {
     background-color: rgb(253, 253, 7);
     width: 100%;
     display: flex;
 }
 
-#nname{
+#nname {
     float: left;
     background-color: blue;
     display: flex;
@@ -23,25 +25,25 @@
     padding-right: 1%;
 }
 
-#myname{
+#myname {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 220%;
 }
 
-#nbtns{
+#nbtns {
     background-color: aqua;
     display: flex;
     margin-right: auto;
     margin-left: auto;
 }
 
-.nbuttons{
+.nbuttons {
     margin: 1rem;
 }
 
-#LINKS{
+#LINKS {
     background-color: chartreuse;
     display: flex;
     justify-content: center;
@@ -50,30 +52,33 @@
     padding-right: 3%;
 }
 
-.links, .lightmode{
+.links,
+.lightmode {
     margin-left: 1%;
     margin-right: 9%;
 }
 
-#div2{
+#div2 {
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: chocolate;
 }
-#profilepic{
+
+#profilepic {
     height: 12rem;
     margin-top: 0.5rem;
     border-radius: 50%;
     border: 6px solid black;
 }
-#div3{
+
+#div3 {
     height: 28.97499rem;
     background-color: gold;
 }
 
-#nspan{
+#nspan {
     background-color: blue;
     display: flex;
     height: auto;
@@ -82,14 +87,15 @@
     margin-left: 25%;
     margin-right: 25%;
 }
-#name{
+
+#name {
     color: rgb(5, 116, 175);
     font-size: 400%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-#pspan{
+#pspan {
     background-color: aqua;
     display: flex;
     height: auto;
@@ -99,13 +105,15 @@
     margin-left: 25%;
     margin-right: 25%;
 }
-#profession{
+
+#profession {
     background-color: brown;
     margin: 0.5rem;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-#dspan{
+
+#dspan {
     background-color: chartreuse;
     display: flex;
     height: auto;
@@ -116,13 +124,14 @@
     text-align: center;
     font-style: italic;
 }
-#details{
+
+#details {
     color: seagreen;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
 }
 
-#impbtnsdiv{
+#impbtnsdiv {
     background-color: rgb(220, 56, 81);
     height: auto;
     display: flex;
@@ -130,21 +139,41 @@
     align-items: center;
     margin-top: 1rem;
 }
-.bimg{
+
+.bimg {
     height: 1.2rem;
     margin-right: 1rem;
     margin-left: 1rem;
 }
-.ib{
+
+.ib {
     background-color: mediumspringgreen;
-    height: 3rem;
+    height: 3.5rem;
     border-radius: 0.8rem;
     padding-right: 3rem;
 }
-#dbtn{
+
+#dbtn {
     margin-right: 1rem;
 }
-#cbtn{
+
+#cbtn {
     margin-left: 1rem;
     padding-right: 4rem;
+}
+
+.plimg{
+    height: 3rem;
+    margin: 3.5rem 0.5rem 0rem 0.5rem;
+
+}
+
+#plink{
+    display: flex;
+    background-color: blue;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+
 }
