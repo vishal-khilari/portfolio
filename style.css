@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    border: 0xp;
+    border: 0px;
 }
 
 #div1 {
@@ -11,7 +11,7 @@
 
 #navbar {
     background-color: rgb(253, 253, 7);
-    /* width: 100%; */
+    width: 100%;
     display: flex;
 }
 
@@ -205,27 +205,30 @@
     background-color: aqua;
 }
 
-#subsec1{
+#subsec1 {
     background-color: chocolate;
     height: auto;
     width: auto;
     display: flex;
     padding: 2%;
     flex-direction: column;
-    
+
 }
-.subsec1_1{
+
+.subsec1_1 {
     display: flex;
     height: auto;
     width: auto;
     justify-content: center;
     align-items: center;
 }
-.sedib{
-    height: 300px;
-    width: 300px;
-    margin: 2%;
+
+.sedib {
+    height: 20rem;
+    width: 40rem;
+    margin: 1%;
 }
+
 #se1 {
     background-color: rgb(182, 182, 236);
 }
