@@ -207,50 +207,37 @@
 
 #subsec1{
     background-color: chocolate;
-    margin: 50px solid blue;
-    height: 1000px;
-    width: 1000px;
+    height: auto;
+    width: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 2%;
+    flex-direction: column;
+    
 }
-
+.subsec1_1{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.sedib{
+    height: 300px;
+    width: 300px;
+    margin: 2%;
+}
 #se1 {
     background-color: rgb(182, 182, 236);
-    height: 60px;
-    width: 60px;
-    padding: 50%;
-    margin: 10%;
-    border: 50px;
-    float: left;
 }
 
 #se2 {
     background-color: rgb(19, 19, 228);
-    height: 60px;
-    width: 60px;
-    padding: 50%;
-    border: 50px;
-    margin: 10%;
-    float: right;
 }
 
 #se3 {
     background-color: rgb(61, 61, 73);
-    height: 60px;
-    width: 60px;
-    padding: 50%;
-    border: 50px;
-    margin: 10%;
-    float: left;
 }
 
 #se4 {
     background-color: rgb(6, 6, 80);
-    height: 60px;
-    width: 60px;
-    padding: 50%;
-    border: 50px;
-    margin: 10%;
-    float: right;
 }
