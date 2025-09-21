@@ -2,6 +2,12 @@
     padding: 0px;
     margin: 0px;
     border: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+
 }
 
 #div1 {
