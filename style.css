@@ -1,300 +1,306 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* helps keep things inside div */
 }
 
-#mpage{
-    background-color: rgb(60, 0, 255);
+/* Main page wrapper */
+#mpage {
+    background-color: rgba(109, 255, 148, 0.303);
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
-#div1 {
-    background-color: rgb(34, 164, 60);
-    width: 100vw;
-    height: 6vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* HEADER / NAVBAR */
+header {
+    width: 100%;
+    height: 9vh;
     position: fixed;
+    /* stays at the top */
     top: 0;
+    left: 0;
+    z-index: 1000;
+    /* ensures it’s above everything */
 }
 
-#navbar {
-    background-color: rgb(8, 1, 30);
-    width: 100vw;
-    height: inherit;
-    display: inherit;
-    position: inherit;
-}
-
-#nname {
-    background-color: rgb(8, 1, 30);
-    float: left;
-    height: auto;
+#navbar, #div1 {
+    background-color: rgb(103, 164, 34);
+    width: 100%;
+    height: 100%;
     display: flex;
-    text-align: center;
     align-items: center;
-    padding-left: 1%;
-    padding-right: 1%;
+    justify-content: space-between;
+    padding: 0 0.2rem;
 }
 
-#myname {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    color: rgb(0, 255, 255);
-    background-color: rgb(8, 1, 30);
+/* Example sections inside navbar */
+#nname {
+    background-color: brown;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 #nbtns {
-    background-color: rgb(8, 1, 30);
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    gap: 1rem;
+}
+
+/* MAIN CONTENT */
+main {
+    margin-top: 9vh;
+    /* creates space equal to navbar height */
+    flex: 1;
+    /* fills remaining height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Example content blocks */
+#div2 {
+    margin-top: 1.2rem;
+    /* extra spacing if you want */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profilepic {
+    height: 12rem;
+    border-radius: 50%;
+    border: 5px solid black;
 }
 
 .nbuttons {
     margin: 5%;
-    color: aqua;
-    background-color: rgb(8, 1, 30);
 }
 
+/*
 #LINKS {
-    background-color: rgb(8, 1, 30);
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 3%;
     padding-right: 3%;
 }
+*/
 
 .links,
 .lightmode {
     margin-left: 1%;
     margin-right: 9%;
-    background-color: rgb(8, 1, 30);
-}
-
-#div2 {
-    height: auto;
-    width: 100vw;
-    margin: clamp(6vh, 8vh, 1330px) 0rem -1rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(8, 1, 30);
-}
-
-#profilepic {
-    height: 12rem;
-    width: auto;
-    margin-top: 0rem;
-    margin-bottom: 1.5rem;
-    border-radius: 50%;
-    border: 3px solid rgb(255, 255, 255);
-    box-shadow: 0px 0px 15px 0rem rgb(65, 209, 175);
 }
 
 #div3 {
-    height: 29.4593734rem;
-    background-color: rgb(8, 1, 30);
+        box-sizing: border-box;
+
+    /* height: 29.4593734rem; */
+}
+
+#nspan {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ndiv {
-    background-color: rgb(8, 1, 30);
     display: flex;
-    height: auto;
-    max-width: fit-content;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(157, 0, 255);
+    align-items: center;
+
 }
 
 #name {
-    color: rgb(10, 68, 255);
-    font-size: clamp(10px, 11vw,60px);
+    color: rgb(5, 116, 175);
+    font-size: clamp(55px, 8vw, 400%);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-align: center;
-    background-color: rgb(8, 1, 30);
+    margin: 0px 2vh;
+    white-space: nowrap; /* keep it on one line */
 }
 
-#pspan {
-    background-color: rgb(8, 1, 30);
+
+#pdiv {
     display: flex;
     height: auto;
     justify-content: center;
-    /* margin: 0%; */
+    align-items: center;
+    margin: 0.4%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #profession {
-    background-color: rgb(8, 1, 30);
-    color: white;
-    margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: clamp(18px,6vw,2rem);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-bottom: clamp(4px,2vh,4vh);
 }
 
-#dspan {
-    background-color: rgb(8, 1, 30);
+#ddiv {
     display: flex;
     height: auto;
-    width: auto;
     justify-content: center;
     align-items: center;
-    padding: clamp(5px, 3vw, 5vh) clamp(8px, 8vw, 130px);
+    margin: 0 12px;
+    /* margin: 0 clamp(7px, 1vw, 17vw); for phone */
+    /* margin: 0 clamp(7px, 25.6vw,50rem); for desktop */
+    text-align: center;
     font-style: italic;
+}
+@media (min-width: 768px) {
+  #ddiv {
+    margin: 0 25.6vw; /* tablets & laptops */
+  }
+}
+
+@media (min-width: 1200px) {
+  #ddiv {
+    margin: 0 24.5rem;
+  }
 }
 
 #details {
-    color: rgb(106, 106, 106);
+    color: seagreen;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(14px, 2vw, 25px);
-    text-align: center;
-    /* margin: 0px clamp(10px, 3vh, 60px); */
+    font-size: clamp(15px,3vw,1.33rem);
 }
 
 #impbtnsdiv {
-    background-color: rgb(8, 1, 30);
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    align-items: center;
+    margin: 1rem 2vw;
 }
 
 .bimg {
     height: 1.2rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    background-color: #ff7474e0;
 }
 
 .ib {
-    background-color: rgb(8, 1, 30);
+
     height: 3.6rem;
     border-radius: 0.8rem;
     padding-right: 3rem;
-    display: flex;
-    align-items: center;
 }
 
 #dbtn {
-    margin-right: 0.5vh;
-    background-color: rgb(0, 244, 142);
+    margin-right: 1rem;
 }
 
 #cbtn {
     margin-left: 1rem;
     padding-right: 4rem;
-    background-color: rgb(0, 255, 145);
 }
 
 .plimg {
     height: 3rem;
-    margin: 2.5rem 0.5rem 1.0058rem 0.5rem;
-    background-color: rgb(8, 1, 30);
+    margin: 2.5rem 0.5rem 0rem 0.5rem;
 
 }
 
 #plink {
     display: flex;
-    background-color: rgb(8, 1, 30);
     height: auto;
     width: auto;
     justify-content: center;
     align-items: center;
 
 }
-
-#section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(158, 18, 8);
-    height: auto;
-    width: auto;
-    flex-direction: column;
-}
-
-#se {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xxx-large;
-    color: rgb(43, 226, 61);
-    margin: 5% 0% 0% 0%;
-    background-color: rgb(226, 17, 128);
-    text-align: center;
-}
-
-#sed {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    margin: 0% 23% 0% 23%;
-    color: rgb(212, 206, 15);
-    text-align: center;
-    background-color: rgb(234, 0, 255);
-}
-
-#subsec1 {
-    background-color: rgb(237, 178, 28);
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-gap: 2vh;
-    height: auto;
-    width: auto;
-    padding: 1%;
-}
-
-
-.sedib {
-    height: 20vh;
-    width: 80vh;
-}
-
-#se1 {
-    background-color: rgb(182, 182, 236);
-}
-
-#se2 {
-    background-color: rgb(112, 112, 186);
-}
-
-#se3 {
-    background-color: rgb(170, 68, 195);
-}
-
-#se4 {
-    background-color: rgb(13, 129, 26);
-}
-
-#subsec2 {
-    background-color: rgb(28, 237, 178);
-    height: auto;
-    width: auto;
-    padding: 1%;
-}
-
-subsec2_1 {
-    background-color: rgb(237, 28, 178);
-    height: auto;
-    width: auto;
-    padding: 1%;
-}
-
-.cbtn {
-    height: 3.6rem;
-    width: auto;
-    border-radius: 0.8rem;
-    padding: auto;
-    background-color: rgb(26, 23, 113);
-    margin: 1rem;
-    color: white;
-    padding: auto;
-}
+/*  */
+/* #section2 { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: rgb(158, 18, 8); */
+    /* height: auto; */
+    /* width: auto; */
+    /* flex-direction: column; */
+/* } */
+/*  */
+/* #se { */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: xxx-large; */
+    /* color: rgb(43, 226, 61); */
+    /* margin: 5% 0% 0% 0%; */
+    /* background-color: rgb(226, 17, 128); */
+    /* text-align: center; */
+/* } */
+/*  */
+/* #sed { */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: 1.3rem; */
+    /* margin: 0% 23% 0% 23%; */
+    /* color: rgb(212, 206, 15); */
+    /* text-align: center; */
+    /* background-color: rgb(234, 0, 255); */
+/* } */
+/*  */
+/* #subsec1 { */
+    /* background-color: rgb(237, 178, 28); */
+    /* display: grid; */
+    /* grid-template-rows: auto auto; */
+    /* grid-template-columns: auto auto; */
+    /* grid-gap: 2vh; */
+    /* height: auto; */
+    /* width: auto; */
+    /* padding: 1%; */
+/* } */
+/*  */
+/*  */
+/* .sedib { */
+    /* height: 20vh; */
+    /* width: 80vh; */
+/* } */
+/*  */
+/* #se1 { */
+    /* background-color: rgb(182, 182, 236); */
+/* } */
+/*  */
+/* #se2 { */
+    /* background-color: rgb(112, 112, 186); */
+/* } */
+/*  */
+/* #se3 { */
+    /* background-color: rgb(170, 68, 195); */
+/* } */
+/*  */
+/* #se4 { */
+    /* background-color: rgb(13, 129, 26); */
+/* } */
+/*  */
+/* #subsec2 { */
+    /* background-color: rgb(28, 237, 178); */
+    /* height: auto; */
+    /* width: auto; */
+    /* padding: 1%; */
+/* } */
+/*  */
+/* subsec2_1 { */
+    /* background-color: rgb(237, 28, 178); */
+    /* height: auto; */
+    /* width: auto; */
+    /* padding: 1%; */
+/* } */
+/*  */
+/* .cbtn { */
+    /* height: 3.6rem; */
+    /* width: auto; */
+    /* border-radius: 0.8rem; */
+    /* padding: auto; */
+    /* background-color: rgb(26, 23, 113); */
+    /* margin: 1rem; */
+    /* color: white; */
+    /* padding: auto; */
+/* } */
