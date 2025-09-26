@@ -11,6 +11,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
+
     flex-direction: column;
 }
 
@@ -269,9 +270,30 @@ main {
     padding: 1%;
 }
 
+.pp {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 
 .sedib {
     border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.sel{
+    background-color: rgb(248, 127, 127);
+    height: 1rem;
+    width: 95%;
+    place-self: center;
+}
+div1, div2, div3, div4{
+    margin:2.5% 2%;
+    /* display: flex; */
+    background-color: yellow;
+    /* justify-content: center; */
+    /* align-items: center; */
+    white-space: nowrap;
 }
 
 #se1 {
@@ -289,7 +311,12 @@ main {
 #se4 {
     background-color: rgb(13, 129, 26);
 }
-
+.seh{
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*  */
 /* #subsec2 { */
 /* background-color: rgb(28, 237, 178); */
