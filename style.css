@@ -264,7 +264,6 @@ main {
     background-color: rgb(237, 178, 28);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
-    grid-auto-rows: 40vh;
     align-items: center;
     justify-content: center;
     gap: 5vh;
@@ -286,8 +285,8 @@ main {
 .sel{
     background-color: rgb(248, 127, 127);
     height: 1rem;
-    width: 95%;
-    place-self: center;
+    width: 95%; /*adjust %*/
+    place-self: left;
 }
 div1, div2, div3, div4{
     margin:2.5% 2%;
