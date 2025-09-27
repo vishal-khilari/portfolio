@@ -164,6 +164,7 @@ main {
 @media (min-width: 768px) {
 
     #ddiv,
+    #fpd,
     #sed {
         margin: 0 25.6vw;
         /* tablets & laptops */
@@ -173,6 +174,7 @@ main {
 @media (min-width: 1200px) {
 
     #ddiv,
+    #fpd,
     #sed {
         margin: 0 24.5rem;
     }
@@ -282,14 +284,19 @@ main {
     padding: 0.5rem;
 }
 
-.sel{
+.sel {
     background-color: rgb(248, 127, 127);
     height: 1rem;
-    width: 95%; /*adjust %*/
+    width: 95%;
+    /*adjust %*/
     place-self: left;
 }
-div1, div2, div3, div4{
-    margin:2.5% 2%;
+
+div1,
+div2,
+div3,
+div4 {
+    margin: 2.5% 2%;
     /* display: flex; */
     background-color: yellow;
     /* justify-content: center; */
@@ -312,34 +319,56 @@ div1, div2, div3, div4{
 #se4 {
     background-color: rgb(13, 129, 26);
 }
-.seh{
+
+.seh {
     height: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*  */
-/* #subsec2 { */
-/* background-color: rgb(28, 237, 178); */
-/* height: auto; */
-/* width: auto; */
-/* padding: 1%; */
-/* } */
-/*  */
-/* subsec2_1 { */
-/* background-color: rgb(237, 28, 178); */
-/* height: auto; */
-/* width: auto; */
-/* padding: 1%; */
-/* } */
-/*  */
-/* .cbtn { */
-/* height: 3.6rem; */
-/* width: auto; */
-/* border-radius: 0.8rem; */
-/* padding: auto; */
-/* background-color: rgb(26, 23, 113); */
-/* margin: 1rem; */
-/* color: white; */
-/* padding: auto; */
-/* } */
+
+#ca {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 6vw, 2.5rem);
+    margin: 3rem 0% 3vh 0%;
+}
+
+#subsec2_1 {
+    height: auto;
+    width: auto;
+    margin-bottom: 3rem;
+
+}
+
+.cbtn {
+    width: auto;
+    padding: 0.6rem;
+    white-space: nowrap;
+    margin: 0.7rem clamp(18px, 5vw, 1rem);
+    border-radius: 10rem;
+
+}
+
+
+
+
+#section3 {
+    background-color: rgba(177, 255, 255, 0.662);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#fp {
+    margin: 8vh 0 4vh 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    font-size: clamp(35px, 3vw, 500%);
+    white-space: nowrap;
+}
+
+#section4{
+    background-color: rgba(249, 226, 197, 0.426);
+}
