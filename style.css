@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* helps keep things inside div */
 }
 
-/* Main page wrapper */
 #mpage {
     background-color: rgba(109, 255, 148, 0.303);
     width: 100vw;
@@ -15,16 +13,13 @@
     flex-direction: column;
 }
 
-/* HEADER / NAVBAR */
 header {
     width: 100%;
     height: 9vh;
     position: fixed;
-    /* stays at the top */
     top: 0;
     left: 0;
     z-index: 1000;
-    /* ensures it’s above everything */
 }
 
 #navbar,
@@ -38,7 +33,6 @@ header {
     padding: 0 0.2rem;
 }
 
-/* Example sections inside navbar */
 #nname {
     background-color: rgba(150, 206, 252, 0.714);
     color: white;
@@ -52,22 +46,17 @@ header {
     gap: 1rem;
 }
 
-/* MAIN CONTENT */
 main {
     margin-top: 9vh;
-    /* creates space equal to navbar height */
     flex: 1;
-    /* fills remaining height */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* Example content blocks */
 #div2 {
     margin-top: 1.2rem;
-    /* extra spacing if you want */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,8 +90,6 @@ main {
 
 #div3 {
     box-sizing: border-box;
-
-    /* height: 29.4593734rem; */
 }
 
 #nspan {
@@ -128,7 +115,6 @@ main {
     font-weight: bold;
     margin: 0px 2vh;
     white-space: nowrap;
-    /* keep it on one line */
 }
 
 
@@ -155,8 +141,6 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 12px;
-    /* margin: 0 clamp(7px, 1vw, 17vw); for phone */
-    /* margin: 0 clamp(7px, 25.6vw,50rem); for desktop */
     text-align: center;
     font-style: italic;
 }
@@ -168,7 +152,6 @@ main {
     #eed,
     #sed {
         margin: 0 25.6vw;
-        /* tablets & laptops */
     }
 }
 
@@ -379,10 +362,6 @@ div4 {
     text-align: center;
 }
 
-#education {
-    display: flex;
-    flex-direction: column;
-}
 
 .projects {
     background-color: rgba(197, 249, 119, 0.771);
@@ -397,7 +376,6 @@ div4 {
 
 .fps {
     place-self: center;
-    /* width: clamp(10%, 180vw, 90%); */
     height: auto;
     background-color: salmon;
     margin-bottom: 3vh;
@@ -410,7 +388,7 @@ div4 {
     width: 100%;
 }
 
-.pd{
+.pd {
     background-color: lightseagreen;
     text-align: left;
     padding: 0.5rem;
@@ -421,9 +399,49 @@ div4 {
     white-space: normal;
 }
 
-.fpt{
+.fpt {
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(18px, 10vw, 2rem);
     margin-top: 0.3rem;
     text-align: left;
+}
+
+#pes {
+    background-color: rgba(175, 175, 255, 0.326);
+    height: 40px;
+}
+
+
+#education {
+    background-color: rgba(182, 255, 255, 0.719);
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+    border: 0.2rem solid black;
+    padding: 1rem;
+}
+
+#edu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 6vw, 2.5rem);
+    margin: 1rem 0% 3vh 0%;
+}
+
+.rc {
+    background-color: rgb(255, 132, 132);
+    border-radius: 1rem;
+    display: inline-block;
+    height: auto;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.list {
+    background-color: rgba(195, 247, 185, 0.479);
+    list-style: circle;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+    list-style-position: inside;;
 }
