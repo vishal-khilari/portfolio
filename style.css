@@ -419,6 +419,7 @@ div4 {
     margin: 0 5vw;
     border: 0.2rem solid black;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 #edu {
@@ -444,4 +445,9 @@ div4 {
     padding: 0;
     list-style-type: circle;
     list-style-position: inside;;
+}
+
+#eediv{
+    background-color: #ffd5cc;
+    padding: 0 0 1rem 0;
 }
