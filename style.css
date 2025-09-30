@@ -289,7 +289,6 @@ main {
     background-color: rgb(248, 127, 127);
     height: 1rem;
     width: 95%;
-    /*adjust %*/
     place-self: left;
 }
 
@@ -298,10 +297,7 @@ div2,
 div3,
 div4 {
     margin: 2.5% 2%;
-    /* display: flex; */
     background-color: yellow;
-    /* justify-content: center; */
-    /* align-items: center; */
     white-space: nowrap;
 }
 
@@ -386,4 +382,48 @@ div4 {
 #education {
     display: flex;
     flex-direction: column;
+}
+
+.projects {
+    background-color: rgba(197, 249, 119, 0.771);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: auto;
+    padding: 1%;
+}
+
+.fps {
+    place-self: center;
+    /* width: clamp(10%, 180vw, 90%); */
+    height: auto;
+    background-color: salmon;
+    margin-bottom: 3vh;
+    padding: 4%;
+
+}
+
+.fpimg {
+    background-color: rgba(255, 110, 255, 0.71);
+    width: 100%;
+}
+
+.pd{
+    background-color: lightseagreen;
+    text-align: left;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 3vw, 1.2rem);
+    width: 100%;
+    white-space: normal;
+}
+
+.fpt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(18px, 10vw, 2rem);
+    margin-top: 0.3rem;
+    text-align: left;
 }
