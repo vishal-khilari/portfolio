@@ -150,7 +150,8 @@ main {
     #ddiv,
     #fpd,
     #eed,
-    #sed {
+    #sed,
+    #lcd {
         margin: 0 25.6vw;
     }
 }
@@ -159,7 +160,8 @@ main {
 
     #ddiv,
     #fpd,
-    #sed {
+    #sed,
+    #lcd {
         margin: 0 24.5rem;
     }
 }
@@ -199,7 +201,8 @@ main {
     padding-right: 4rem;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
     font-size: 2rem;
     margin: 2rem 0.5rem 0rem 0.5rem;
 
@@ -425,7 +428,7 @@ div4 {
 #edu {
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(10px, 6vw, 2.5rem);
-    margin: 1rem 0% 3vh 0%;
+    margin: 1rem 0% 3vh 2%;
 }
 
 .rc {
@@ -444,10 +447,94 @@ div4 {
     margin: 0;
     padding: 0;
     list-style-type: circle;
-    list-style-position: inside;;
+    list-style-position: inside;
+    ;
 }
 
-#eediv{
+#eediv {
     background-color: #ffd5cc;
     padding: 0 0 1rem 0;
+}
+
+#section5 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 182, 193, 0.479);
+    height: auto;
+    width: auto;
+}
+
+#lc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 8vw, 45px);
+    color: rgba(137, 144, 244, 0.786);
+    margin: 4vh 0% 2vh 0%;
+    white-space: nowrap;
+    background-color: rgba(255, 182, 193, 0.479);
+    text-align: center;
+}
+
+#lcd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(15px, 3vw, 1.33rem);
+    color: rgb(255, 105, 180);
+    text-align: center;
+    font-style: italic;
+}
+
+#contactform {
+    display: flex;
+    flex-flow: column;
+    background-color: aqua;
+    border: 2px solid black;
+    width: auto;
+}
+
+#cgrid {
+    display: grid;
+    gap: 50px;
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-template-columns: repeat(auto-fit, minmax(40vh, 40vw));
+    width: 85vw;
+    justify-content: center;
+    margin: 3vh 0;
+}
+
+.info {
+    background-color: aquamarine;
+    height: 50px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.gite {
+    color: rgb(0, 118, 114);
+    margin: 4%;
+}
+
+#getintouch {
+    border: 2px solid black;
+    padding: 4%;
+}
+
+
+footer {
+    background-color: rgba(210, 161, 255, 0.741);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh 0;
+}
+
+#lbut {
+    display: flex;
+    flex-flow: row;
 }

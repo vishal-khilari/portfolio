@@ -381,22 +381,56 @@
         </div>
     </section>
     <section id="section5">
-        <h2>Let's Connect</h2>
-        <h4>I'm always interested in new opportunities, collaborations, and meaningful conversations. Feel free to reach
+        <h2 id="lc">Let's Connect</h2>
+        <h4 id="lcd">I'm always interested in new opportunities, collaborations, and meaningful conversations. Feel free
+            to reach
             out if you'd like to work together or just say hello!</h4>
-        <div>
+        <div id="cgrid">
             <div>
-                <h3>
-                    Get In Touch
-                </h3>
-                <h4>I'm currently looking for new opportunities and always open to discussing interesting
-                    projects or potential collaborations.
-                </h4>
-            </div>
+                <div id="getintouch">
+                    <h2>Get In Touch</h2>
+                    <h5>I'm currently looking for new opportunities and always open to discussing interesting projects
+                        or potential collaborations.</h5>
+                    <div class="info"><i class="fa-regular fa-envelope gite"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <h5>vishalkhilari0@gmail.com</h5>
+                        </div>
+                    </div>
+                    <div class="info"><i class="fa-solid fa-phone gite"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <h5>+91 7760764401</h5>
+                        </div>
+                    </div>
+                    <div class="info"><i class="fa-solid fa-location-dot gite"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <h5>Bangalore, India</h5>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
             <div>
-                <h3>Send a Message</h3>
-                <h4>Fill out the form below and I'll get back to you as soon as possible.</h4>
+                <form id="contactform">
+                    <h2>Send a Message</h2>
+                    <h4>Fill out the form below and I'll get back to you as soon as possible.</h4>
+                    <br>
+                    <h4>Name*</h4>
+
+                    <input type="text" id="formname" name="name" placeholder="Your Name" required>
+                    <br>
+                    <h4>Email*</h4>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <br>
+                    <h4>Subject</h4>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about">
+                    <br>
+                    <h4>Message</h4>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" id="submitbtn">Send Message</button>
+                </form>
             </div>
         </div>
 
@@ -404,14 +438,16 @@
     <footer>
         <div>
             <h3>Vishal Khilari</h3>
-            <h4>Engineering Student passionate about creating innovative solutions through code. Always excited to
+            <h5>Engineering Student passionate about creating innovative solutions through code. Always excited to
                 collaborate on meaningful projects and learn new technologies.</h4>
         </div>
         <div>
             <h3>Quick Links</h3>
-            <h4>github</h4>
-            <h4>linkedin</h4>
-            <h4>email</h4>
+            <div id="lbut">
+                <h4><i class="fa-brands fa-github"></i></h4>
+                <h4><i class="fa-brands fa-linkedin"></i></h4>
+                <h4><i class="fa-solid fa-envelope"></i></h4>
+            </div>
         </div>
         <div>
             <h3>Contact Info: 999999999</h3>
